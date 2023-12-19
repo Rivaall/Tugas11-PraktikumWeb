@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertambahan Bilangan</title>
+  </head>
+  <body>
+    <h2 style="color: steelblue">Soal 4: Menghitung Jumlah Dua Bilangan</h2>
+    <input type="number" id="bil1" name="bil1" />
+    <br />+
+    <br />
+    <input type="number" id="bil2" name="bil2" onchange="tambahkan()" />
+    <br />=
+    <br />
+    <span id="hasil"></span>
+
+    <script>
+      function tambahkan() {
+        let bilangan1 = parseFloat(document.getElementById("bil1").value);
+        let bilangan2 = parseFloat(document.getElementById("bil2").value);
+
+        let hasil = bilangan1 + bilangan2;
+
+        document.getElementById("hasil").innerHTML = hasil;
+      }
+    </script>
+  </body>
+</html>
